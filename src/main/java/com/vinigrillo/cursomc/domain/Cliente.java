@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.vinigrillo.cursomc.domain.enums.TipoCliente;
 
 import jakarta.persistence.CollectionTable;
@@ -32,7 +32,7 @@ public class Cliente implements Serializable{
 	private Integer tipo;
 	
 	@OneToMany(mappedBy = "cliente")
-	@JsonBackReference
+	@JsonManagedReference
 	private List<Endereco> enderecos = new ArrayList<>();
 	
 	@ElementCollection
