@@ -91,7 +91,7 @@ public class Produto implements Serializable{
 		this.categorias = categorias;
 	}
 
-	public Set<ItemPedido> getitens() {
+	public Set<ItemPedido> getItens() {
 		return itens;
 	}
 
