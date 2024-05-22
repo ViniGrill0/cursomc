@@ -17,6 +17,10 @@ public class StandardError implements Serializable{
 		this.timeStamp = timeStamp;
 	}
 	
+	public StandardError(Long timestamp2, Integer status2, String error, String message, String path) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Integer getStatus() {
 		return status;
 	}
