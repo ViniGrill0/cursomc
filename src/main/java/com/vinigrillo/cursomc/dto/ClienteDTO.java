@@ -5,7 +5,9 @@ import java.io.Serializable;
 import javax.validation.constraints.Email;
 
 import com.vinigrillo.cursomc.domain.Cliente;
+import com.vinigrillo.cursomc.services.validation.ClienteUpdate;
 
+@ClienteUpdate
 public class ClienteDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
